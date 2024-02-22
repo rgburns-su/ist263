@@ -1,0 +1,24 @@
+h1 {color: plum;
+    font-size: 2em;
+    font-stretch: expanded;
+}
+
+p{color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+a{
+    color:aquamarine;
+}
+p a{
+    color: brown;
+}
+
+/* This this styles the id*/
+#secondparagraph{
+    color: cornflowerblue;
+    font: bold;
+}
+
+/*Class style*/
+.purpletext{color: purple;}

@@ -1,0 +1,27 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1,h2 {
+    color: darkblue;
+}
+
+.oddrow {
+    color: cadetblue;
+}
+
+.evenrow{
+    color: burlywood;
+}
+
+.toprow{
+    color: darkgoldenrod;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1.25em;
+}
