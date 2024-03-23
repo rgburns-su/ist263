@@ -11,7 +11,7 @@ nav {
 
 nav a {
     float: left;
-    color: #f2f2f2;
+    color: #766565;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -19,7 +19,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ddd;
+    background-color: #594848;
     color: black;
 }
 
@@ -53,7 +53,7 @@ nav a:hover {
 
 aside {
     flex: 1;
-    background-color: #f4f4f4;
+    background-color: #7cb1e5;
     padding: 20px;
     border-radius: 8px;
     margin-left: 20px;
