@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        nav{background-color: black;
+        padding: 10px;
+        color: aliceblue;
+        display: flex;/*always has to be on row*/
+        }
+        nav div{
+            padding: 5px;
+        }
+        .flexend{justify-content: flex-end;} /*justify content always goes on the row*/
+
+        .spacearound{justify-content: space-around;} 
+
+        .spacebetween{justify-content: space-between;}
+
+        .left{display: flex;}
+        .right{display: flex;}
+        .split{justify-content: space-between;}
+    </style>
+</head>
+<body>
+    <h1>Navigation 4 ways</h1>
+        <h2>Right Side</h2>
+
+        <nav class = "flexend"> <!--row-->
+            <div>Home</div> <!--column-->
+            <div>About us</div> <!--column-->
+            <div>Products</div> <!--column-->
+            <div>Contact</div>  <!--column-->
+        </nav>
+
+        <h2>Space around</h2>
+        <nav class = "spacearound">
+            <div>Home</div>
+            <div>About us</div>
+            <div>Products</div>
+            <div>Contact</div>
+        </nav>
+
+        <h2>Space Between</h2>
+        <nav class = "spacebetween">
+            <div>Home</div>
+            <div>About us</div>
+            <div>Products</div>
+            <div>Contact</div>
+        </nav>
+
+        <h2>Split</h2>
+        <nav class = "split"> <!--Children of the split are left and right-->
+            <div class="left">
+                <div>Home</div>
+                <div>About us</div>
+                <div>Products</div>
+                <div>Contact</div>
+            </div>
+            <div class="right">
+                <div>Facebook</div>
+                <div>X</div>
+            </div>
+        </nav>
+    
+    
+</body>
+</html>
