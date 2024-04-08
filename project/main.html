@@ -6,115 +6,206 @@
     <title>Exotic Fish</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
+
         header {
-            background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-            padding: 10px 0;
+            background-color: #0077b6;
+            color: #ffffff;
+            padding: 20px;
             text-align: center;
-            color: white;
             font-size: 2em;
-        }
-        nav {
-            background: #eee;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
             font-weight: bold;
+            opacity: 40%;
         }
-        .video-placeholder {
-            background: #ddd;
-            height: 200px;
-            margin: 20px;
-        }
-        .content-section {
-            padding: 20px;
-        }
-        .text-block {
-            background: #f8f8f8;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .image-placeholder {
-            background: #bbb;
-            height: 150px;
-            margin-bottom: 20px;
-        }
-        footer {
-            background: #202020;
-            color: white;
-            text-align: center;
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #03045e;
             padding: 10px 0;
-            margin-top: auto;
         }
-        footer a {
-            color: white;
+
+        nav a {
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #ffffff;
+        }
+
+
+        .content-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .titles {
+            color: #023e8a;
+            margin-bottom: 10px;
+        }
+
+        .text-block {
+            background-color: #e0f2fe;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-first, .image-second, .image-third, .image-fourth {
+            width: 100%;
+            padding: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-first:hover, .image-second:hover, .image-third:hover, .image-fourth:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #023e8a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .video {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            padding-right: 0;
+            overflow: hidden;
+        }
+
+        #backgroundVideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header-content {
+            position: relative;
+            text-align: center; 
+        }
+
+        .header-content header {
+            position: absolute;
+            width: 100%; 
+            top: 50%; 
+            left: 0;
+            transform: translateY(-50%); 
+            color: #fff; 
+            font-size: 2em; 
+            z-index: 10;
+        }
+
+        .header-content img {
+            width: 100%; 
+            height: auto; 
+            display: block; 
         }
     </style>
 </head>
 <body>
-    <header>EXOTIC FISH</header>
     <nav>
-        <a href="#">Home</a> |
-        <a href="#">Booking</a> |
-        <a href="#">Press Kit & Media</a>
+        <a href="main.html">Home</a> |
+        <a href="booking.html">Booking</a> |
+        <a href="press.html">Press Kit & Media</a>
     </nav>
-    
-    <div class="video-placeholder">video</div>
+    <div class="header-content">
+        <header>EXOTIC FISH</header>
+        <img src="images/DALL·E 2024-01-21 20.00.58 - A banner for the SoundCloud page of 'Exotic Fish', a house music producer. The design should be minimalistic, embodying an aquatic theme without any t.jpeg" alt="Exotic Fish Logo">
+    </div>
+
+    <div class="video">
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="https://dl.dropboxusercontent.com/scl/fi/a68wtarz06lg8lyc56299/IMG_0249.mov?rlkey=lo65l52eg8kz03f9c696p9e7t&dl=0" type="video/mp4">
+            https://www.dropbox.com/scl/fi/a68wtarz06lg8lyc56299/IMG_0249.mov?rlkey=lo65l52eg8kz03f9c696p9e7t&dl=0
+            Your browser does not support HTML5 video.
+          </video>
+    </div>
     
     <div class="content-section">
-        <h2>The Journey</h2>
         <div class="first">
+            <h3 class ="titles">The Start:</h3>
             <div class="text-block">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.
+                I Originally learned how to DJ in the world of VR. This allowed me to keep the cost of entry into mixing
+                to stay very low while giving me all the features of a $1,000 set up. The application Is called Tribe XR DJ
+                and I highly recommend it to everyone who is interested in trying to DJ.
             </div>
-            <div class="image-placeholder"></div>
+            <div class="image-first">
+                <img class="image-first" src="images/IMG_8386.jpg" alt="Exotic Fish DJing at Cage">
+            </div>
         </div>
         <div class = "second">
+            <h3 class ="titles">Figuring it out:</h3>
             <div class="text-block">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.
+                After I learned the basics, I decided to get my first set of Decks. I decided on the DDJ-200. This was a
+                very cheap deck with almost no fancy features, but I loved being able to get my physical hands on some
+                decks. This allowed me to take the techniques I learned in the digital VR world into real life. I also was
+                now able to start playing gigs. I started DJing for some of my friends when they would come over, but I
+                quickly started DJing at the Syracuse parties. This allowed me to work on my crowd knowledge
+                and understand how to see what audiences enjoy.
+                After playing a few times, people started reaching out to me to play at other venues. I
+                had opportunities to play at a few fraternity parties. These allowed me to network with other local DJs
+                and learn how to get gigs at house shows as well as other daytime parties around Syracuse. I was even able to
+                play at some local bars, which allowed me to start getting paid for my work.
             </div>
-            <div class="image-placeholder"></div>
+            <div class="image-second">
+                <img class = "image-second" src="images/IMG_4193.JPG" alt="Exotic Fish DJing at the round">
+            </div>
         </div>
         <div class = "third">
+            <h3 class ="titles">Production:</h3>
             <div class="text-block">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.
+                These advancements in the world of Djing made me understand the importance of being able to
+                produce your own tracks. This is what can set you apart from every other DJ. By making your own tracks,
+                it makes people not want to just see any DJ. They want to see you. When you have your own music you
+                are now able to attract audiences that like not only the music you play, but also your own music. This
+                makes your crowds more specific to the genre you like and improves your overall experience as a DJ.
             </div>
-            <div class="image-placeholder"></div>
+            <div class="image-third">
+                <img class = "image-third" src="images/IMG_4183.JPG" alt="Exotic Fish Djing">
+            </div>
         </div>
         <div class = "fourth">
+            <h3 class ="titles">Making Music:</h3>
             <div class="text-block">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.
+                Making Music is very difficult, but as with anything the more you do it the better you get. I have learned
+                through trial and error. You must never give up and keep striving for perfection in your music. This has
+                led me to making tracks that I absolutely hate but also some that I really enjoy. It gives you the freedom
+                to make music that you like.
             </div>
-            <div class="image-placeholder"></div>
-        </div>
-            <div class = "fifth">
-            <div class="text-block">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.
+            <div class="image-fourth">
+                <img class = "image-fourth" src="images/IMG_2892.JPG" alt="Exotic Fish Djing">
             </div>
-            <div class="image-placeholder"></div>
-        </div>
-        </div class="">
-        <div class="text-block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.
         </div>
     </div>
 
     <footer>
-        <a href="#">home</a> |
-        <a href="#">Booking</a> |
-        <a href="#">Button</a>
+        <a href="main.html">home</a> |
+        <a href="booking.html">Booking</a> |
+        <a href="press.html">Button</a>
     </footer>
 </body>
 </html>
