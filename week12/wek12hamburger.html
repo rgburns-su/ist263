@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <style>
+        a{
+            background-color: #9f2121;
+        }
+        #hamicon{
+            width:40px;
+            display:none;
+        }
+        #close{
+            display:none;
+        }
+
+        @media only screen and (max-width:800px){
+            #hamicon,#close{display:block;}
+            a{display:block;}
+            #navlinks{display:none;}
+            .boxit{display:flex;}
+        }
+    </style>
+    <script>
+        function showNav(){
+            document.getElementById("navlinks").style.display="block";
+        }
+        function hideNav(){
+            document.getElementById("navlinks").style.display="none";
+        }
+    </script>
+</head>
+<body>
+    <div id="boxit">
+        <img  id = "hamicon" onclick="showNav();" src = "https://laferger.github.io/ist263/images/hamburger.png" alt = "hamburger">
+        <p id = "close" onclick="hideNav();">X</p>
+    </div>
+    <nav id="navlinks">
+        <a>About</a>
+        <a>Skills</a>
+        <a>Contact</a>
+    </nav>
+    <h1>Hamburger</h1>
+    <h2>css</h2>
+    <ol>
+        <li>Large - No Hamburger</li>
+        <li>small - show</li>
+        <li>Larger - no X</li>
+        <li>small - show X</li>
+        <li>Large - links side by side</li>
+        <li>small - links are stacked</li>
+        <li>small - Links are hidden</li>
+    </ol>
+    <h2>JavaScript</h2>
+    <ol>
+        <li>click on hamburger -link show</li>
+        <li>click on X -links hide</li>
+    </ol>
+</body>
+</html>
