@@ -95,6 +95,7 @@ footer a {
     overflow: hidden;
 }
 
+
 #backgroundVideo {
     position: absolute;
     top: 0;
@@ -130,23 +131,45 @@ footer a {
     padding: 20px;
 }
 
+.fishtank{
+    flex: 1;
+}
 .list1,.list2,.list3,.list4,.list5{
     font-family: 'Arial', sans-serif;
     font-size: 30px;
-    background-color: #f0f8ff;
-    color: #333;
-    margin: 20px;
-    padding: 0;
+    background-color: #0666b9;
+    color: #e1b8b8;
+    text-shadow: #03045e;
+    
+    margin: 15px;
+    padding: 10px;
     border-radius: 20px;
     border-color: #03045e;
 }
 .press-content {
+    flex:3;
     position: relative;
     width: 100%;
     padding-top: 0px;
     overflow: hidden;
   }
 .video1,.video2,.video3,.video4,.video5,.video6,.video7{
-    width:;
-
+    width: 400px;
 }
+.press-back{
+    background-color: #d9edff;
+}
+
+.what-new{
+    padding: 15px;
+    color: #2a00d4
+}
+
+.new-track{
+    background-color: #333;
+}
+
+.new-track .what-new{
+    color: #ffebcd;
+}
+
