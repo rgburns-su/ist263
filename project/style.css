@@ -9,7 +9,6 @@ body {
 header {
     background-color: #0077b6;
     color: #ffffff;
-    padding: 20px;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
@@ -60,6 +59,8 @@ nav a:hover {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
 .image-first, .image-second, .image-third, .image-fourth {
@@ -77,7 +78,7 @@ footer {
     background-color: #023e8a;
     color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -145,6 +146,12 @@ footer a {
     padding: 10px;
     border-radius: 20px;
     border-color: #03045e;
+    transition: 0.3s ease-in-out;
+}
+
+.list1:hover, .list2:hover,.list3:hover,.list4:hover,.list5:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 .press-content {
     flex:3;
@@ -153,9 +160,7 @@ footer a {
     padding-top: 0px;
     overflow: hidden;
   }
-.video1,.video2,.video3,.video4,.video5,.video6,.video7{
-    width: 400px;
-}
+
 .press-back{
     background-color: #d9edff;
 }
@@ -167,9 +172,49 @@ footer a {
 
 .new-track{
     background-color: #333;
+
 }
 
 .new-track .what-new{
     color: #ffebcd;
+    padding: 40px;
+
+}
+
+#Video1,#Video2,#Video3,#Video4,#Video5,#Video6{
+    position: relative;
+    width: 400px;
+    height:auto;
+    transition: 0.3s ease-in-out;
+
+}
+
+#Video1:hover,#Video2:hover,#Video3:hover,#Video4:hover,#Video5:hover,#Video6:hover{
+    transform: scale(1.05);
+    cursor: url('cursor/fishing-rod-red-fish-3D-custom-cursor.png'), auto;
+}
+
+#Video7,#Video8{
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 50px;
+}
+
+.updown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.VIDEOS{
+    display: flex;            
+    flex-wrap: wrap;          
+    justify-content: space-around; 
+    align-items: center;      
+    padding: 20px;
 }
 
