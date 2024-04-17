@@ -223,3 +223,90 @@ footer a {
     padding: 20px;
 }
 
+.music-title{
+    background-color: #333;
+    size: 3em;
+    color: #fcc070;
+    padding:40px;
+    justify-content: center;
+}
+#set{
+    background-color: #333;
+    size: 3em;
+    color: #fcc070;
+    padding:40px;
+    justify-content: center;
+}
+
+.music-section{
+    display: block;
+    flex-wrap: wrap;
+}
+
+.song_title1,.song_title2,.song_title3,.song_title4,.song_title5,.song_title6,.song_title7,.song_title8,.sets{
+    padding: 20px;
+    width: auto;
+    height: 100%;
+    transition: 2s ease-in-out;
+}
+
+.song_title1,.song_title6{
+    background-color: #408f8f;
+}
+
+.song_title2,.song_title7{
+    background-color: #2a00d4;
+}
+
+.song_title3,.sets{
+    background-color: #fcc070;
+}
+
+.song_title4{
+    background-color: #5647b5;
+}
+
+.song_title5{
+    background-color: #00bfff;
+}
+
+.song_title1:hover,.song_title2:hover,.song_title3:hover,.song_title4:hover,.song_title5:hover,.song_title6:hover,.song_title7:hover,.song_title8:hover,.sets:hover{
+    transform: scale(1.02);
+    cursor: url('cursor/cursor.cur'), auto;
+}
+
+.contact{
+    display: flex;
+    flex-grow: unset;
+}
+
+.booking-form{
+    background-color: #568bb9;
+    padding:40px;
+}
+
+.other-ways{
+    padding:15px;
+}
+
+.instagram{
+    padding:auto;
+}
+.instagram-media{
+    justify-content: center;
+    padding: auto;  
+}
+
+.soundcloud{
+    padding:auto;
+}
+
+.email{
+    padding:auto;
+}
+
+.contact-methods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
