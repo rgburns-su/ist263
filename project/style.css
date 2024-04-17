@@ -289,24 +289,37 @@ footer a {
     padding:15px;
 }
 
-.instagram{
-    padding:auto;
-}
 .instagram-media{
     justify-content: center;
     padding: auto;  
 }
 
-.soundcloud{
-    padding:auto;
+.contact-methods div {
+    margin: 0;
+    padding: 0;
 }
 
-.email{
-    padding:auto;
+.contact-methods img{
+    width :200px;
 }
 
 .contact-methods{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0;
+}
+
+.instagram img{
+    padding: 50px;
+}
+
+.soundcloud img{
+    padding: 50px;
+
+}
+
+.email img{
+    padding: 50px;
+
 }
