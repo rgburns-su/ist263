@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exotic Fish</title>
-    <link rel = "stylesheet" href = "style.css">
+    <title>Booking | Exotic Fish</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <style>
+
+        
+    </style>
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("navlinks");
+            var isVisibile = nav.style.display === 'block';
+            nav.style.display = isVisibile ? 'none' : 'block';
+            document.getElementById("close").style.display = isVisibile ? 'none' : 'block';
+            document.getElementById("hamicon").style.display = isVisibile ? 'block' : 'none';
+        }
+    </script>
 </head>
-<body>
-    <nav>
+<body class="bookback">
+    <div id="boxit">
+        <img id="hamicon" onclick="toggleNav();" src="images/fish_icon.png" alt="hamburger">
+        <img id="close" onclick="toggleNav();" src = "images/close_button_fish_hooks.png" style="display: none;">
+    </div>
+    <nav id="navlinks">
         <a href="main.html">Home</a> |
         <a href="booking.html">Music & Booking</a> |
         <a href="press.html">Press Kit & Media</a>

@@ -1,5 +1,4 @@
 body {
-    font-family: 'Arial', sans-serif;
     background-color: #f0f8ff;
     color: #333;
     margin: 0;
@@ -50,7 +49,7 @@ nav a:hover {
 }
 
 .titles {
-    color: #023e8a;
+    color: #a6cdff;
     margin-bottom: 10px;
 }
 
@@ -66,12 +65,12 @@ nav a:hover {
 
 .image-first, .image-second, .image-third, .image-fourth {
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
 .image-first:hover, .image-second:hover, .image-third:hover, .image-fourth:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     cursor: url('cursor/cursor.cur'), auto;
 }
 
@@ -262,7 +261,7 @@ footer a {
     background-color: #fcc070;
 }
 
-.song_title4{
+.song_title4,.song_title8{
     background-color: #5647b5;
 }
 
@@ -286,12 +285,12 @@ footer a {
 }
 
 .other-ways{
+    color: #d9edff;
     padding:15px;
 }
 
 .instagram-media{
-    justify-content: center;
-    padding: auto;  
+    justify-content: center; 
 }
 
 .contact-methods div {
@@ -324,9 +323,29 @@ footer a {
 
 }
 
-.chelsea-market-regular {
-    font-family: "Chelsea Market", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+.insta-model{
+    display: flex;
+    flex: wrap;
+}
+
+#hamicon, #close {
+    position: relative;
+    cursor: pointer;
+    display: none;
+    width: 50px;
+}
+#navlinks a {
+    display: block; 
+}
+@media only screen and (max-width: 800px) {
+    #hamicon, #close {
+        display: block;
+    }
+    #navlinks {
+        display: none; 
+    }
+}
+
+.bookback{
+    background-color: #03045e;
+}
