@@ -242,7 +242,7 @@ footer a {
     flex-wrap: wrap;
 }
 
-.song_title1,.song_title2,.song_title3,.song_title4,.song_title5,.song_title6,.song_title7,.song_title8,.sets{
+.song_title1,.song_title2,.song_title3,.song_title4,.song_title5,.song_title6,.song_title7,.song_title8,.set1,.set2{
     padding: 20px;
     width: auto;
     height: 100%;
@@ -257,7 +257,7 @@ footer a {
     background-color: #2a00d4;
 }
 
-.song_title3,.sets{
+.song_title3,.set1{
     background-color: #fcc070;
 }
 
@@ -265,16 +265,16 @@ footer a {
     background-color: #5647b5;
 }
 
-.song_title5{
+.song_title5, .set2{
     background-color: #00bfff;
 }
 
-.song_title1:hover,.song_title2:hover,.song_title3:hover,.song_title4:hover,.song_title5:hover,.song_title6:hover,.song_title7:hover,.song_title8:hover,.sets:hover{
+.song_title1:hover,.song_title2:hover,.song_title3:hover,.song_title4:hover,.song_title5:hover,.song_title6:hover,.song_title7:hover,.song_title8:hover,.set1:hover,.set2:hover{
     transform: scale(1.02);
     cursor: url('cursor/cursor.cur'), auto;
 }
 
-.contact{
+#contact{
     display: flex;
     flex-grow: unset;
 }
@@ -334,6 +334,8 @@ footer a {
     display: none;
     width: 50px;
 }
+
+
 #navlinks a {
     display: block; 
 }
@@ -344,6 +346,10 @@ footer a {
     #navlinks {
         display: none; 
     }
+    #contact{
+        display: block;
+    }
+
 }
 
 .bookback{
