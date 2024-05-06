@@ -286,6 +286,7 @@ footer a {
 }
 
 .booking-form{
+    color: #e0f2fe;
     background-color: #568bb9;
     padding:40px;
 }
@@ -353,9 +354,7 @@ footer a {
     #navlinks {
         display: none; 
     }
-    #contact{
-        display: block;
-    }
+    
 }
 
 @media only screen and (min-width: 800px) {
@@ -364,6 +363,13 @@ footer a {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    #contact{
+        display: block;
+    }
+}
+
 .bookback{
     background-color: #03045e;
 }
+
