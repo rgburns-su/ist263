@@ -57,9 +57,10 @@ nav a:hover {
     background-color: #e0f2fe;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 1 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 1 4px 6px #0000001a;
     font-size: 1.1em;
     font-weight: 300;
+    color: #333;
 
 }
 
@@ -130,6 +131,7 @@ footer a {
 .split{
     display:flex;
     padding: 20px;
+    background-color:#144040;
 }
 
 .fishtank{
@@ -140,8 +142,7 @@ footer a {
     font-size: 30px;
     background-color: #0666b9;
     color: #e1b8b8;
-    text-shadow: #03045e;
-    
+    text-shadow: 2px 2px #03045e;
     margin: 15px;
     padding: 10px;
     border-radius: 20px;
@@ -155,7 +156,8 @@ footer a {
 }
 
 .fishtank h2{
-    color:#a6cdff;
+    align-content: center;
+    color: #ffffff;
 }
 
 .press-content {
@@ -164,7 +166,7 @@ footer a {
     width: 100%;
     padding-top: 0px;
     overflow: hidden;
-    color: #a6cdff;
+    color: #ffffff;
   }
 
 .press-back{
