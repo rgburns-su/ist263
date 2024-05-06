@@ -150,6 +150,12 @@ footer a {
     transition: 0.3s ease-in-out;
 }
 
+ul{
+    align-items: center;
+    padding: auto;
+}
+
+
 .list1:hover, .list2:hover,.list3:hover,.list4:hover,.list5:hover{
     transform: scale(1.05);
     cursor: url('cursor/cursor.cur'), auto;
