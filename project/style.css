@@ -153,12 +153,18 @@ footer a {
     transform: scale(1.05);
     cursor: url('cursor/cursor.cur'), auto;
 }
+
+.fishtank h2{
+    color:#a6cdff;
+}
+
 .press-content {
     flex:3;
     position: relative;
     width: 100%;
     padding-top: 0px;
     overflow: hidden;
+    color: #a6cdff;
   }
 
 .press-back{
@@ -339,6 +345,7 @@ footer a {
 #navlinks a {
     display: block; 
 }
+
 @media only screen and (max-width: 800px) {
     #hamicon, #close {
         display: block;
@@ -349,7 +356,12 @@ footer a {
     #contact{
         display: block;
     }
+}
 
+@media only screen and (min-width: 800px) {
+    #hamicon, #close {
+        display: none;
+    }
 }
 
 .bookback{
