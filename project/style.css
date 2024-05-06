@@ -256,23 +256,23 @@ footer a {
 }
 
 .song_title1,.song_title6{
-    background-color: #377a7a;
+    background-color: #194f4f;
 }
 
 .song_title2,.song_title7{
-    background-color: #2a00d4;
+    background-color: #1e0094;
 }
 
 .song_title3,.set1{
-    background-color: #fcc070;
+    background-color: #bc843b;
 }
 
 .song_title4,.song_title8{
-    background-color: #5647b5;
+    background-color: #3d3188;
 }
 
 .song_title5, .set2{
-    background-color: #00bfff;
+    background-color: #096f91;
 }
 
 .song_title1:hover,.song_title2:hover,.song_title3:hover,.song_title4:hover,.song_title5:hover,.song_title6:hover,.song_title7:hover,.song_title8:hover,.set1:hover,.set2:hover{
